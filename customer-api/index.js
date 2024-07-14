@@ -30,6 +30,10 @@ const data = {
 app.use(cors());
 
 // endPoints
+app.get('/', (req, res) => {
+  res.send("Hey I'm Running");
+});
+
 app.get('/customers', (req, res) => {
   res.json(data.customers);
 });
